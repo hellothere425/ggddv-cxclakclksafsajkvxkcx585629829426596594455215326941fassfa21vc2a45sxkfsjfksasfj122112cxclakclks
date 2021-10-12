@@ -24,8 +24,19 @@ elseif game.Players.LocalPlayer.Name == '1xToxsins' then
 elseif game.Players.LocalPlayer.Name == 'xKellus' then
 	number = 721756202
 
-elseif game.Players.LocalPlayer.Name == 'Rexx321q' then
-	number = 603189440
+elseif game.Players.LocalPlayer.Name == 'holalamame' then
+	number = 918301838
+	
+elseif game.Players.LocalPlayer.Name == 'wewthomaswew' then
+	number = 620375264
+	
+elseif game.Players.LocalPlayer.Name == 'xKellus' then
+	number = 721756202
+	
+elseif game.Players.LocalPlayer.Name == 'xKellus' then
+	number = 721756202
+elseif game.Players.LocalPlayer.Name == 'BOKITANOPERD0NA' then
+	number = 2652368137
 
 elseif game.Players.LocalPlayer.Name == 'Hectiq1' then
 	number = 163395980
