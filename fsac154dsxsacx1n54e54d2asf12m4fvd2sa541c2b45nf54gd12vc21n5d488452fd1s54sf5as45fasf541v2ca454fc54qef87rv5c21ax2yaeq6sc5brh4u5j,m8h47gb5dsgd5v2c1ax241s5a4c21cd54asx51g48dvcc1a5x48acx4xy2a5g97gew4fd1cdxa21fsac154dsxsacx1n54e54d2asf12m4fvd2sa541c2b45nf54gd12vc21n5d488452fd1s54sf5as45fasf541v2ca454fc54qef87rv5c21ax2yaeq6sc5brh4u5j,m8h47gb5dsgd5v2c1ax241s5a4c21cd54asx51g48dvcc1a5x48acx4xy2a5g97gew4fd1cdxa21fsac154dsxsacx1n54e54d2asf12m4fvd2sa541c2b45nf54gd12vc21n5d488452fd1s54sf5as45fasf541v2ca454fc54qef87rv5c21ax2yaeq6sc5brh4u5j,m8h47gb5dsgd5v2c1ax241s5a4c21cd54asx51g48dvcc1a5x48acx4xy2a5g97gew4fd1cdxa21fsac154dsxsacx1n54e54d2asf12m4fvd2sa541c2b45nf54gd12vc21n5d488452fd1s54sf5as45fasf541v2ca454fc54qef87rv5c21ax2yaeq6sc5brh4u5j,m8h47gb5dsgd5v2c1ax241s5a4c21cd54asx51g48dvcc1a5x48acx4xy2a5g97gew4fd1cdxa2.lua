@@ -21,6 +21,15 @@ if game.Players.LocalPlayer.Name == 'TheForceOfWind' then
 elseif game.Players.LocalPlayer.Name == '1xToxsins' then
 	number = 239382111
 
+elseif game.Players.LocalPlayer.Name == 'xKellus' then
+	number = 721756202
+
+elseif game.Players.LocalPlayer.Name == 'Rexx321q' then
+	number = 603189440
+
+elseif game.Players.LocalPlayer.Name == 'Hectiq1' then
+	number = 163395980
+
 elseif game.Players.LocalPlayer.Name == 'ThePerfectTorpRipOff' then
 	number = 2433603109
 	
