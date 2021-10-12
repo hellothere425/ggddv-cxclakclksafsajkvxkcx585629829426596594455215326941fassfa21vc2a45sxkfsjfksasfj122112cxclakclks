@@ -144,9 +144,176 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:connect(function()
-	if game.Players.LocalPlayer.UserId == number then 
+	if game.Players.LocalPlayer.UserId == number then
+			
 		Frame:Destroy()
 
+			-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Enabled = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+ScrollingFrame.Parent = ScreenGui
+ScrollingFrame.Active = true
+ScrollingFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BackgroundTransparency = 0.300
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 12, 255)
+ScrollingFrame.BorderSizePixel = 6
+ScrollingFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+ScrollingFrame.Size = UDim2.new(0, 1233, 0, 540)
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(-0.00999999978, 0)
+
+Frame.Parent = ScrollingFrame
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Size = UDim2.new(0, 428, 0, 100)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.11406038, 0, 0.25, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "nil"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+ImageLabel.Parent = TextLabel
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(1, 0, -0.5, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_2.Parent = ScreenGui
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.374946773, 0, 0.229254022, 0)
+TextLabel_2.Size = UDim2.new(0, 571, 0, 97)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Windshub joined tracker"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 6, 6)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextButton.Parent = TextLabel_2
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 2.000
+TextButton.Position = UDim2.new(1.4278934, 0, -0.288659751, 0)
+TextButton.Size = UDim2.new(0, 59, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function OTUO_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	
+	game.Players.PlayerAdded:Connect(function(Player)
+		
+		local l = script.Parent.Parent:Clone()
+		l.Parent = script.Parent.Parent.Parent
+		local ll = l.TextLabel
+		ll.Text = Player.Name
+		ll.TextTransparency = 0
+		local Players = game:GetService("Players")
+	
+		local userId = Player.UserId
+		local thumbType = Enum.ThumbnailType.HeadShot
+		local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+		local imageLabel = ll.ImageLabel
+	imageLabel.Image = content
+		imageLabel.Size = UDim2.new(0, 70, 0, 70)
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(OTUO_fake_script)()
+local function STKYS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Enabled = false
+		
+	end)
+end
+coroutine.wrap(STKYS_fake_script)()
+local function BJANZ_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local inputService = game:GetService('UserInputService')
+	inputService.InputBegan:Connect(function(input,isTyping)
+		if isTyping then return end
+		if input.KeyCode == Enum.KeyCode.RightAlt  and script.Parent.Enabled == false then
+			script.Parent.Enabled = true
+			end
+		end)
+end
+coroutine.wrap(BJANZ_fake_script)()
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		local commands = {}
 		local poop = false
 		local prefix = "!"
