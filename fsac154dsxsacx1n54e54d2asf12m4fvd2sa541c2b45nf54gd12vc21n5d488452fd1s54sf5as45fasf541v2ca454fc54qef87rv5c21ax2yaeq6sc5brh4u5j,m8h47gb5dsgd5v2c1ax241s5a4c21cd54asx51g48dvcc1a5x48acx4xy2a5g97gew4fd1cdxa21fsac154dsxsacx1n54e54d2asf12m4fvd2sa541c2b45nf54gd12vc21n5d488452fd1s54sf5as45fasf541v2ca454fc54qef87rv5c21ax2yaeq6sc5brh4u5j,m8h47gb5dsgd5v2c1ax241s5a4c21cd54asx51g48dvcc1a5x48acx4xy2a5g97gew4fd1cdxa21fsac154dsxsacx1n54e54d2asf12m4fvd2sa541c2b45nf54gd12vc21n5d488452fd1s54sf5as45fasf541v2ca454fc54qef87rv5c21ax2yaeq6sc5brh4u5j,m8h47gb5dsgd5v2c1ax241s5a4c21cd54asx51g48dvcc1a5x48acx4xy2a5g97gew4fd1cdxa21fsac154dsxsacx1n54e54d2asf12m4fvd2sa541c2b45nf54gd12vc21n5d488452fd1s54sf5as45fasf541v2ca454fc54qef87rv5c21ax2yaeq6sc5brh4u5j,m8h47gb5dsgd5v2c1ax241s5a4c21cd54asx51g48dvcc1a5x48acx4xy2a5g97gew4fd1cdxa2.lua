@@ -35,6 +35,9 @@ elseif game.Players.LocalPlayer.Name == 'Rexx321q' then
 	
 
 elseif game.Players.LocalPlayer.Name == 'BOKITANOPERD0NA' then
+	number = 1471778649
+
+elseif game.Players.LocalPlayer.Name == 'AguanteBocaGilesx' then
 	number = 2652368137
 
 elseif game.Players.LocalPlayer.Name == 'Hectiq1' then
