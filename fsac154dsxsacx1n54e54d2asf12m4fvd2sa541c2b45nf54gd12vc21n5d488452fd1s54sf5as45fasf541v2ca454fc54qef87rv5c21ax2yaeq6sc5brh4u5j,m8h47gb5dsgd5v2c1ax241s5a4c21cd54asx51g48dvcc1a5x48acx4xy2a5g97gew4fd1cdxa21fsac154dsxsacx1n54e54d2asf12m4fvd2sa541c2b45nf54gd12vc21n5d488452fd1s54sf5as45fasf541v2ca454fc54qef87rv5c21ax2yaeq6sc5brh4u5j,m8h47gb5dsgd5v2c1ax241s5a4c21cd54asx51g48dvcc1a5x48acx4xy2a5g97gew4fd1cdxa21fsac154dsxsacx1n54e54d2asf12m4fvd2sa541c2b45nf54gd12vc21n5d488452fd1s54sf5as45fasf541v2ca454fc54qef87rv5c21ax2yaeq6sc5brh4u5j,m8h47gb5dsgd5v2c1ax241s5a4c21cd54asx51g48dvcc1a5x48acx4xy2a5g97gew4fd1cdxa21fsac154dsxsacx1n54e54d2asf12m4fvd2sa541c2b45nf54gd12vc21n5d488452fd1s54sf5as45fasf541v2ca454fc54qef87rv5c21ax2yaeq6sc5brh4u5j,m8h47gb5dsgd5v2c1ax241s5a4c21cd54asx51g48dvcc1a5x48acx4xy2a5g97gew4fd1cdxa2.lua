@@ -18,6 +18,20 @@ if game.Players.LocalPlayer.Name == 'TheForceOfWind' then
 	number = 50446819
 
 
+elseif game.Players.LocalPlayer.Name == 'il_manu' then
+	number = 1189895702
+
+elseif game.Players.LocalPlayer.Name == 'il_manu3' then
+	number = 2299283602
+
+elseif game.Players.LocalPlayer.Name == 'Bloody_Archangel' then
+	number = 589931813
+
+elseif game.Players.LocalPlayer.Name == 'AllMightyDesires' then
+	number = 797816410
+
+
+	
 elseif game.Players.LocalPlayer.Name == '1xToxsins' then
 	number = 239382111
 
