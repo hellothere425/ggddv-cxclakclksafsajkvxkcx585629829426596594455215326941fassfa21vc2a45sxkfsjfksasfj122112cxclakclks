@@ -41,6 +41,8 @@ elseif game.Players.LocalPlayer.Name == 'ProLiFlix1' then
 elseif game.Players.LocalPlayer.Name == '1xToxsins' then
 	number = 239382111
 
+elseif game.Players.LocalPlayer.Name == 'ItsIgglo' then
+	number = 1803742772
 elseif game.Players.LocalPlayer.Name == 'xKellus' then
 	number = 721756202
 
