@@ -21,6 +21,9 @@ if game.Players.LocalPlayer.Name == 'TheForceOfWind' then
 elseif game.Players.LocalPlayer.Name == 'il_manu' then
 	number = 1189895702
 
+elseif game.Players.LocalPlayer.Name == 'xqGabrielz' then
+	number = 683390135
+
 elseif game.Players.LocalPlayer.Name == 'il_manu3' then
 	number = 2299283602
 
