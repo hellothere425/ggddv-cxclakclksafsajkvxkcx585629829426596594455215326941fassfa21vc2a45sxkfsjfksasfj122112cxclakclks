@@ -32,6 +32,9 @@ elseif game.Players.LocalPlayer.Name == 'Bloody_Archangel' then
 
 elseif game.Players.LocalPlayer.Name == 'AllMightyDesires' then
 	number = 797816410
+	
+elseif game.Players.LocalPlayer.Name == 'ProLiFlix1' then
+	number = 968557989
 
 
 	
